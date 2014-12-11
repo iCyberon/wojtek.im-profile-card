@@ -90,9 +90,13 @@ a.icon {
     background: url('../img/dribbble.svg') no-repeat center;
 }
 
+.github {
+    background: url('../img/github.svg') no-repeat center;
+}
+
 a.message {
     text-align: right;
-    transition: all 0.3s ease;
+    transition: all 0.2s ease;
 
         &:hover {
             color: $yellow-100;
@@ -131,6 +135,8 @@ section {
 .profile-info {
     display: inline-block;
     margin-left: 20px;
+    position: relative;
+    top: -2px;
 }
 
 aside {
