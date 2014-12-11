@@ -1,0 +1,152 @@
+// Colors
+$black: #1D1D1F;
+$yellow-100: #FFCC33;
+$yellow-200: #806000;
+$yellow-300: #C79F28;
+$white: #fff;
+
+
+// Styles
+*, *:before, *:after {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+    background-color: $black;
+    font-family: 'Montserrat', Myriad Pro, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    min-height: 100vh;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+h1 {
+    color: $black;
+    font-size: 2em;
+    margin: 0;
+}
+
+h2 {
+    color: $yellow-200;
+    font-weight: 400;
+    font-size: 1em;
+    margin: 4px 0;
+}
+
+h3 {
+    color: $yellow-300;
+    font-weight: 400;
+    font-size: 0.8em;
+}
+
+a {
+    color: $white;
+    text-decoration: none;
+    border-bottom: 1px solid rgba(255,255,255,1);
+    padding-bottom: 2px;
+}
+
+a.icon {
+    border: none;
+    border-radius: 100px;
+    display: inline-block;
+    overflow: hidden;
+    color: $black;
+    height: 40px;
+    width: 40px;
+    padding-top: 40px;
+    text-align: center;
+    transition: all 0.3s cubic-bezier(.07,1.5,.73,.8);
+    transform: scale(1);
+    will-change: all;
+
+        &:hover {
+            background-color: $white;
+            padding-top: 16px;
+            font-size: 7px;
+            transform: scale(1.6);
+        }
+
+        &:active {
+            transform: scale(1.2);
+        }
+
+}
+
+.linkedin {
+    background: url('../img/linkedin.svg') no-repeat center;
+}
+
+.twitter {
+    background: url('../img/twitter.svg') no-repeat center;
+}
+
+.dribbble {
+    background: url('../img/dribbble.svg') no-repeat center;
+}
+
+a.message {
+    text-align: right;
+    transition: all 0.3s ease;
+
+        &:hover {
+            color: $yellow-100;
+            border-color: $yellow-100;
+        }
+
+        &:active {
+            transform: scale(0.8);
+        }
+}
+
+section {
+    background-color: $yellow-100;
+    width: 600px;
+    padding: 24px;
+    display: block;
+    border-radius: 5px;
+    display: flex;
+    align-items: center;
+}
+
+.profile-photo {
+    display: inline-block;
+
+        img {
+            height: 100px;
+            width: 100px;
+            border: 4px solid $black;
+            border-radius: 200px;
+        }
+
+}
+
+.profile-info {
+    display: inline-block;
+    margin-left: 20px;
+}
+
+aside {
+    margin-top: 15px;
+    width: 580px;
+    display: flex;
+    flex-direction: row;
+    justify-content: flex-start;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.social {
+    // align-self: flex-start;
+    // flex-grow: 1;
+}
+
+.contact {
+    // align-self: flex-end;
+    // flex-grow: 0;
+}
