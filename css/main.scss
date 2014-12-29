@@ -23,12 +23,21 @@ body {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+
+    @media (max-width: 480px) {
+        justify-content: flex-start;
+        margin-top: 1.5em;
+    }
 }
 
 h1 {
     color: $black;
     font-size: 2em;
     margin: 0;
+
+    @media (max-width: 580px) {
+      font-size: 1.5em;
+    }
 }
 
 h2 {
@@ -36,12 +45,20 @@ h2 {
     font-weight: 400;
     font-size: 1em;
     margin: 4px 0;
+
+    @media (max-width: 580px) {
+      font-size: 0.75em;
+    }
 }
 
 h3 {
     color: $yellow-300;
     font-weight: 400;
     font-size: 0.8em;
+
+    @media (max-width: 580px) {
+      font-size: 0.75em;
+    }
 }
 
 a {
@@ -118,6 +135,11 @@ section {
     display: flex;
     align-items: center;
     animation: expand 1000ms 0.5s linear both;
+
+      @media (max-width: 768px) {
+        width: 90%;
+        margin: 0 auto;
+      }
 }
 
 .profile-photo {
@@ -128,7 +150,17 @@ section {
             width: 100px;
             border: 4px solid $black;
             border-radius: 200px;
+
+            @media (max-width: 620px) {
+              width: 64px;
+              height: 64px;
+            } 
         }
+
+
+    @media (max-width: 380px) {
+      display: none;
+    }
 
 }
 
@@ -148,6 +180,15 @@ aside {
     align-items: center;
     justify-content: space-between;
     animation: expand 1500ms 1.2s linear both;
+
+    @media (max-width: 768px) {
+        width: 90%;
+        margin: 15px auto;
+      }
+
+    @media (max-width: 480px) {
+        flex-direction: column;
+      }
 }
 
 .social {
@@ -160,6 +201,9 @@ aside {
     // flex-grow: 0;
     position: relative;
     top: -5px;
+      @media (max-width: 480px) {
+        margin-top: 1.5em;
+      }
 }
 
 /* Load animation */
