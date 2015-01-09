@@ -69,9 +69,12 @@ a {
 }
 
 a.icon {
+    font-size: 7px;
     border: none;
-    border-radius: 100px;
+    border-radius: 200px;
+    background-color: transparent;
     display: inline-block;
+    position: relative;
     overflow: hidden;
     color: $black;
     height: 40px;
@@ -80,14 +83,13 @@ a.icon {
     text-align: center;
     transition: all 0.3s cubic-bezier(.07,1.5,.73,.8);
     transform: scale(1);
-    will-change: all;
     backface-visibility: hidden;
     vertical-align: top; // fixes nasty safari bug
 
         &:hover {
             background-color: $white;
             padding-top: 16px;
-            font-size: 7px;
+            padding-bottom: 0;
             transform: scale(1.6);
         }
 
@@ -96,6 +98,9 @@ a.icon {
         }
 
 }
+
+// This is just disgusting. Fuck you, Apple. (https://bugs.webkit.org/show_bug.cgi?id=45761)
+ 
 
 .linkedin {
     background: url('../img/linkedin.svg') no-repeat center;
@@ -194,8 +199,12 @@ aside {
 }
 
 .social {
+    position: relative;
     // align-self: flex-start;
     // flex-grow: 1;
+    // display: flex;
+    // flex-direction: row;
+    // justify-content: space-around;
 }
 
 .contact {
