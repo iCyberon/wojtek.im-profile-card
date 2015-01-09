@@ -82,6 +82,7 @@ a.icon {
     transform: scale(1);
     will-change: all;
     backface-visibility: hidden;
+    vertical-align: top; // fixes nasty safari bug
 
         &:hover {
             background-color: $white;
