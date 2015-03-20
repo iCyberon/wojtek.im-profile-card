@@ -1,5 +1,5 @@
 // Colors
-$black: #1D1D1F;
+$blue: #4E9AF9;
 $yellow-100: #FFCC33;
 $yellow-200: #806000;
 $yellow-300: #C79F28;
@@ -14,7 +14,7 @@ $white: #fff;
 }
 
 body {
-    background-color: $black;
+    background-color: $blue;
     font-family: 'Montserrat', Myriad Pro, Helvetica, Arial, sans-serif;
     -webkit-font-smoothing: antialiased;
     min-height: 100vh;
@@ -76,7 +76,7 @@ a.icon {
     display: inline-block;
     position: relative;
     overflow: hidden;
-    color: $black;
+    color: $blue;
     height: 40px;
     width: 40px;
     padding-top: 38px;
